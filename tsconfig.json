@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5", // กำหนดเวอร์ชันของ JavaScript ที่จะ compile ไป (ES5 เพื่อความเข้ากันได้กว้าง)
+    "lib": ["dom", "dom.iterable", "esnext"], // ไลบรารีมาตรฐานที่ TypeScript จะรู้จัก
+    "allowJs": true, // อนุญาตให้โปรเจกต์มีไฟล์ JavaScript (.js)
+    "skipLibCheck": true, // ข้ามการตรวจสอบ type definition ของไลบรารีทั้งหมด (ช่วยให้ build เร็วขึ้น)
+    "strict": true, // เปิดใช้งานการตรวจสอบ type ที่เข้มงวดทั้งหมด
+    "forceConsistentCasingInFileNames": true, // บังคับให้การอ้างอิงชื่อไฟล์ตรงตาม case-sensitive
+    "noEmit": true, // ไม่สร้าง output files จากการ compile (Next.js จะจัดการเอง)
+    "esModuleInterop": true, // ช่วยให้การ import module แบบ CommonJS และ ES Modules ทำงานร่วมกันได้ดีขึ้น
+    "module": "esnext", // กำหนดระบบ module ที่ใช้ (ESNext สำหรับ modern JavaScript)
+    "moduleResolution": "bundler", // เปลี่ยนจาก "node" เป็น "bundler" ตามคำแนะนำของ Next.js 14+ / TypeScript 5+
+    "resolveJsonModule": true, // อนุญาตให้ import ไฟล์ .json
+    "isolatedModules": true, // ตรวจสอบให้แน่ใจว่าแต่ละไฟล์สามารถ compile แยกกันได้
+    "jsx": "preserve", // ให้ Next.js จัดการการแปลง JSX
+    "incremental": true, // เปิดใช้งาน incremental compilation (ช่วยให้ build ครั้งถัดไปเร็วขึ้น)
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": { // กำหนด path aliases เพื่อให้ import ง่ายขึ้น
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config"], // ไฟล์และโฟลเดอร์ที่ TypeScript จะทำการ compile
+  "exclude": ["node_modules"] // โฟลเดอร์ที่ไม่ต้อง compile
+}

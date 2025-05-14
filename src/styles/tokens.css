@@ -1,0 +1,24 @@
+/* Design Tokens for Work Standard */
+:root {
+    /* Colors */
+    --color-primary: #4B4B4B;
+    --color-secondary: #848484;
+    --color-accent: #C1C1C1;
+    --color-background: #FFFFFF;
+  
+    /* Typography */
+    --font-family-heading: 'Poppins', sans-serif;
+    --font-family-body: 'Poppins', sans-serif;
+  
+    /* Spacing */
+    --spacing-gutter: 24px;
+    --spacing-margin-vertical: 48px;
+    --spacing-border-radius-sm: 6px;
+    --spacing-border-radius-md: 8px;
+    --spacing-button-padding: 12px 24px;
+  
+    /* Layout */
+    --grid-columns: 12;
+    --grid-gutter-width: var(--spacing-gutter);
+  }
+  
