@@ -3,7 +3,6 @@
 import HeroSection from '../components/sections/home/HeroSection';
 import KeyFeaturesSection from '../components/sections/home/KeyFeaturesSection';
 import FaqSection from '../components/sections/home/FaqSection';
-import PricingSection from '../components/sections/home/PricingSection';
 import WhyWorkStandardSection from '../components/sections/home/WhyWorkStandardSection';
 
 export default function HomePage() {
