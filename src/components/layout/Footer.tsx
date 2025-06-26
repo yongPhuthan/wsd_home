@@ -2,37 +2,37 @@
 import Link from 'next/link';
 import Image from 'next/image'; // Import Image component
 
-const footerSections = [
-  {
-    title: 'Product',
-    links: [
-      { name: 'Features', href: '/features' },
-      { name: 'Invoices', href: '/invoices' },
-      // Add more relevant links
-    ],
-  },
-  {
-    title: 'Company',
-    links: [
-      { name: 'About Us', href: '/about' },
-      { name: 'Contact', href: '/contact' },
-    ],
-  },
-  {
-    title: 'Resources',
-    links: [
-      { name: 'Blog', href: '/blog' },
-      { name: 'Help Center', href: '/help' },
-    ],
-  },
-  {
-    title: 'Legal',
-    links: [
-      { name: 'Privacy Policy', href: '/privacy' },
-      { name: 'Terms of Service', href: '/terms' },
-    ],
-  },
-];
+// const footerSections = [
+//   {
+//     title: 'Product',
+//     links: [
+//       { name: 'Features', href: '/features' },
+//       { name: 'Invoices', href: '/invoices' },
+//       // Add more relevant links
+//     ],
+//   },
+//   {
+//     title: 'Company',
+//     links: [
+//       { name: 'About Us', href: '/about' },
+//       { name: 'Contact', href: '/contact' },
+//     ],
+//   },
+//   {
+//     title: 'Resources',
+//     links: [
+//       { name: 'Blog', href: '/blog' },
+//       { name: 'Help Center', href: '/help' },
+//     ],
+//   },
+//   {
+//     title: 'Legal',
+//     links: [
+//       { name: 'Privacy Policy', href: '/privacy' },
+//       { name: 'Terms of Service', href: '/terms' },
+//     ],
+//   },
+// ];
 
 
 
