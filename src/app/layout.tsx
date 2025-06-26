@@ -29,6 +29,11 @@ const sukhumvitSetHeading = localFont({
                                                // Or if fonts are in src/assets/fonts: '../assets/fonts/SukhumvitSet-Bold.woff2'
       weight: '700', // Or 'bold'
     },
+      {
+      path: '../fonts/SukhumvitSet-Medium.ttf', // **ADJUST THIS PATH** to your Medium font file
+      weight: '500', // '500' typically corresponds to Medium weight
+      style: 'normal',
+    },
     // If you have other weights/styles for SukhumvitSet, add them here:
     // {
     //   path: '../fonts/SukhumvitSet-Regular.woff2', // **ADJUST PATH**
@@ -37,7 +42,7 @@ const sukhumvitSetHeading = localFont({
     // },
   ],
   display: 'swap', // Recommended for font loading performance
-  variable: '--font-sukhumvit-set', // This will create a CSS variable '--font-sukhumvit-set'
+ variable: '--font-sukhumvit-set', // This will create a CSS variable '--font-sukhumvit-set'
 });
 
 export const metadata: Metadata = {

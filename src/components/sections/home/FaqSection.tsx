@@ -14,7 +14,7 @@ const faqData = [
   },
   {
     question: "มีค่าใช้จ่ายในการใช้งานหรือไม่?",
-    answer: "เริ่มต้นใช้งาน WorkStandard ได้ฟรี7วันไม่มีค่าใช้จ่าย ไม่ผูกบัตรเครดิต เข้าใช้งานฟีเจอร์ทั้งหมดได้เต็มที่ หลังจากนั้นสามารถเลือกแพ็กเกจที่เหมาะกับธุรกิจของคุณได้",
+    answer: "เริ่มต้นใช้งาน WorkStandard ได้ฟรีโดยไม่มีค่าใช้จ่าย ไม่ผูกบัตรเครดิต เข้าใช้งานฟีเจอร์ทั้งหมดได้เต็มที่โดยแผนฟรีเสนอราคาได้เดือนละ5ครั้งหลังจากนั้นสามารถเลือกสมัครแพ็กเกจรายเพื่อเสนอราคาได้ไม่จำกัด",
   },
   {
     question: "ข้อมูลของกิจการจะปลอดภัยหรือไม่?",
@@ -35,13 +35,13 @@ function FaqItem({ item, isOpen, onClick }: { item: { question: string; answer: 
           className="flex justify-between items-center w-full p-5 sm:p-6 text-left focus:outline-none focus-visible:ring focus-visible:ring-[var(--color-navbar-hover-bg)] focus-visible:ring-opacity-75 group"
           aria-expanded={isOpen}
         >
-          <span className="text-base sm:text-lg font-medium text-[var(--color-text-main)] group-hover:text-[var(--color-navbar-background)] transition-colors">
+          <span className="text-base sm:text-lg font-medium text-[var(--color-text-main)]  transition-colors">
             {item.question}
           </span>
           {isOpen ? (
             <MinusCircle className="h-6 w-6 text-[var(--color-navbar-background)] transition-transform duration-300" />
           ) : (
-            <PlusCircle className="h-6 w-6 text-[var(--color-text-muted)] group-hover:text-[var(--color-navbar-background)] transition-transform duration-300 group-hover:rotate-180" />
+            <PlusCircle className="h-6 w-6 text-[var(--color-text-muted)]  transition-transform duration-300 group-hover:rotate-180" />
           )}
         </button>
       </h2>
@@ -70,7 +70,7 @@ export default function FaqSection() {
 
   return (
     // Section with creamy background and subtle grid on desktop
-    <section className="bg-[var(--color-background-alt-section)] md:bg-subtle-grid py-16 lg:py-24">
+    <section id="faq" className="bg-[var(--color-background-alt-section)] md:bg-subtle-grid py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-main)]">

@@ -63,7 +63,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                
-                <ul role="list" className="mt-4 space-y-3">
+                {/* <ul role="list" className="mt-4 space-y-3">
                   {footerSections[0].links.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} className="text-base text-[var(--color-footer-text)] hover:text-footer-hover-text">
@@ -71,10 +71,10 @@ export default function Footer() {
                       </Link>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
               <div className="mt-12 md:mt-0">
-                <ul role="list" className="mt-4 space-y-3">
+                {/* <ul role="list" className="mt-4 space-y-3">
                   {footerSections[1].links.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} className="text-base text-[var(--color-footer-text)] hover:text-footer-hover-text">
@@ -82,13 +82,13 @@ export default function Footer() {
                       </Link>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
 
-                <ul role="list" className="mt-4 space-y-3">
+                {/* <ul role="list" className="mt-4 space-y-3">
                   {footerSections[2].links.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} className="text-base text-[var(--color-footer-text)] hover:text-footer-hover-text">
@@ -96,11 +96,11 @@ export default function Footer() {
                       </Link>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
               <div className="mt-12 md:mt-0">
    
-                <ul role="list" className="mt-4 space-y-3">
+                {/* <ul role="list" className="mt-4 space-y-3">
                   {footerSections[3].links.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} className="text-base text-[var(--color-footer-text)] hover:text-footer-hover-text">
@@ -108,7 +108,7 @@ export default function Footer() {
                       </Link>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>

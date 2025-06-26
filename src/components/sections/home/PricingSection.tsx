@@ -29,50 +29,51 @@ interface PlanDetails {
 }
 
 const plans: PlanDetails[] = [
-  {
-    id: 'yearly',
-    name: 'รายปี', // Removed "(คุ้มที่สุด)" from button name
-    displayName: 'แพ็กเกจรายปี',
-    priceFull: 8990,
-    pricePerMonth: Math.round(8990 / 12), // Approx 749
-    billingCycleText: '/ปี',
-    fullPriceText: `ชำระครั้งเดียว ฿8,990`,
-    saveAmount: 'ประหยัดสูงสุด!',
-    isMostPopular: true,
-  },
+  // {
+  //   id: 'yearly',
+  //   name: 'รายปี', // Removed "(คุ้มที่สุด)" from button name
+  //   displayName: 'แพ็กเกจรายปี',
+  //   priceFull: 4990,
+  //   pricePerMonth: Math.round(4990 / 12), // Approx 749
+  //   billingCycleText: '/ปี',
+  //   fullPriceText: `ชำระครั้งเดียว ฿5,489`,
+  //   saveAmount: 'ประหยัดสูงสุด!',
+  //   isMostPopular: true,
+  // },
   {
     id: 'monthly',
     name: 'รายเดือน',
     displayName: 'แพ็กเกจรายเดือน',
-    priceFull: 999,
-    pricePerMonth: 999,
+    priceFull: 499,
+    pricePerMonth: 499,
     billingCycleText: '/เดือน',
-    fullPriceText: `ชำระ ฿999 ทุกเดือน`,
+    fullPriceText: `ชำระ ฿499 ทุกเดือน`,
+    isMostPopular: true,
   },
   {
     id: 'weekly',
     name: 'รายสัปดาห์',
     displayName: 'แพ็กเกจรายสัปดาห์',
-    priceFull: 299,
-    pricePerMonth: Math.round(299 * (52 / 12)), // Approx 1296
+    priceFull: 149,
+    pricePerMonth: Math.round(149 * (52 / 12)), // Approx 1296
     billingCycleText: '/สัปดาห์',
-    fullPriceText: `ชำระ ฿299 ทุกสัปดาห์`,
+    fullPriceText: `ชำระ ฿ 149 ทุกสัปดาห์`,
   },
 ];
 
 export default function PricingSection() {
-  const [selectedPlanId, setSelectedPlanId] = useState<PlanType>('yearly');
+  const [selectedPlanId, setSelectedPlanId] = useState<PlanType>('monthly'); // Default to monthly plan
 
   const selectedPlan = useMemo(() => {
     return plans.find(p => p.id === selectedPlanId) || plans[0];
   }, [selectedPlanId]);
 
   return (
-    <section className="bg-[var(--color-background-default)] py-16 lg:py-24">
+    <section id="pricing"  className="bg-[var(--color-background-default)] py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-main)]">
-              ทดลองใช้งานฟรี 7 วัน ไม่ต้องใช้บัตรเครดิต
+              ทดลองใช้งานฟรีไม่ต้องใช้บัตรเครดิต
           </h2>
           <p className="mt-4 text-lg text-[var(--color-text-muted)] max-w-2xl mx-auto">
            เลือกแพ็กเกจที่เหมาะกับธุรกิจของคุณ
@@ -111,7 +112,7 @@ export default function PricingSection() {
 
             {/* Special Offer Banner - Adjusted Styling */}
             <div className="bg-green-100 text-green-700 p-3 rounded-lg text-center mb-6 text-sm font-medium">
-              <p>✨ ทดลองใช้งานฟรี 7 วัน! ไม่ใช้บัตรเครดิต ✨</p>
+              <p>✨ ทดลองใช้งานฟรี! ไม่ใช้บัตรเครดิต ✨</p>
             </div>
 
             <h3 className="text-2xl font-semibold text-[var(--color-text-main)] text-center">
@@ -142,10 +143,11 @@ export default function PricingSection() {
             </p>
 
             <a
-              href="#start-free-trial"
+             href="https://wsd.onelink.me/CMH0/zjghaexy"
+              target="_blank"
               className="mt-8 block w-full bg-[var(--color-footer-background)] text-[var(--color-footer-text)] hover:bg-opacity-90 py-3.5 px-6 text-lg font-semibold text-center rounded-lg shadow-md transition-colors"
             >
-              เริ่มต้นทดลองใช้ฟรี 7 วัน
+              เริ่มต้นทดลองใช้ฟรี
             </a>
 
             <ul className="mt-10 space-y-4 text-sm">
@@ -165,10 +167,11 @@ export default function PricingSection() {
             เริ่มต้นยกระดับธุรกิจของคุณ
           </p>
           <a
-            href="#start-free-trial-footer"
+                href="https://wsd.onelink.me/CMH0/zjghaexy"
+              target="_blank"
             className="mt-4 inline-block text-lg font-semibold text-[var(--color-text-main)] hover:underline"
           >
-            รับสิทธิ์ทดลองใช้งานฟรี 7 วันทันที &rarr;
+            รับสิทธิ์ทดลองใช้งานฟรีทันที &rarr;
           </a>
         </div>
       </div>
